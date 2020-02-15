@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+.magictime.vanishIn {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.back {
+    opacity: 0.85;
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+    background-size: cover;
+}
+
+body {
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.text {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: screen;
+    position: relative;
+    width: 85%;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 99px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.music-player1 {
+    z-index: 999 !important;
+    height: auto;
+}
+
+.music-player2 {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    /*bottom: 40px;*/
+}
+
+.music-player {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: screen;
+    position: relative;
+    width: 85%;
+    /*height: 80px;*/
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.music-player .info {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.words {
+    padding: 20px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    display: inline-block;
+    line-height: 39px;
+    font-size: 1.1em;
+    font-weight: 500;
+    height: 155px;
+}
+
+.music-player .info .jp-playlist li {
+    /*padding-right: 10px;*/
+    text-align: right;
+    display: none;
+}
+
+.music-player .info .jp-playlist li a {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    color: rgba(57, 57, 57, 0.89);
+    position: relative;
+    top: 20px;
+}
+
+.music-player .info .jp-playlist li a span {
+    font-size: 14px;
+    display: block;
+    margin: 10px 0;
+}
+
+.music-player .info .jp-playlist li.jp-playlist-current {
+    display: block;
+}
+
+.music-player .info .jp-playlist li .jp-free-media, .music-player .info .jp-playlist li .jp-playlist-item-remove {
+    display: none;
+}
+
+.music-player .info .left, .music-player .info .right {
+    width: 25px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.music-player .info .right {
+    left: auto;
+    right: 30px;
+}
+
+.music-player .info [class^="icon-"] {
+    margin: 0 0 10px;
+}
+
+.music-player .info .center {
+    padding: 20px 0 0;
+}
+
+.music-player .progress, .music-player .volume-level {
+    width: 100%;
+    height: 5px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.music-player .progress span, .music-player .volume-level span {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background: #ffbabd;
+    width: 0%;
+    height: 15px;
+}
+
+.music-player .progress span:after, .music-player .volume-level span:after {
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    content: "";
+}
+
+.music-player .controls {
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+    height: 115px;
+
+}
+
+.music-player .controls .current {
+    font-size: 48px;
+    color: #fff;
+    color: rgba(225, 225, 225, 0.4);
+    padding: 15px 0 20px;
+}
+
+.music-player .controls .play-controls a {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    margin: 0 30px;
+    zoom: 0.8;
+}
+
+.music-player .controls .volume-level {
+    position: relative;
+    bottom: auto;
+    width: 200px;
+    height: 2px;
+    margin: 30px auto 0;
+    background: rgba(225, 225, 225, 0.3);
+}
+
+.music-player .controls .volume-level span {
+    height: 2px;
+}
+
+.music-player .controls .volume-level span:after {
+    right: -11px;
+    top: -8px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/V5i67V2.png");
+}
+
+.music-player .controls .volume-level a {
+    position: absolute;
+    right: -32px;
+    top: -8px;
+    width: 22px;
+}
+
+
+#jquery_jplayer{
+    display: none;
+}
+
+
+.music-player .controls .volume-level a.icon-volume-down {
+    right: auto;
+    left: -25px;
+}
+
+[class^="icon-"] {
+    width: 18px;
+    height: 18px;
+    background: no-repeat center;
+    display: block;
+}
+
+.icon-previous {
+    background-image: url("../images/previous.png");
+}
+
+.icon-play {
+    background-image: url("../images/play.png");
+}
+
+.icon-pause {
+    background-image: url("../images/pause.png");
+}
+
+.icon-next {
+    background-image: url("../images/next.png");
+}
+

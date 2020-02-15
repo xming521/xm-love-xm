@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+    <title>like you</title>
+    <link rel="stylesheet" href="css/player.css" type="text/css"/>
+    <link rel="stylesheet" href="css/magic.min.css" type="text/css"/>
+</head>
+<body>
+
+<div id="music-block">
+    <div class="back"></div>
+
+    <div class="music-player music-player1">
+        <div class="info">
+            <div class="jp-playlist">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="play-controls">
+                <a href="javascript:;" class="icon-previous jp-previous" title="previous"></a>
+                <a href="javascript:;"  id="play-button" class="icon-play jp-play" title="play"></a>
+                <a href="javascript:;"  id="pause-button" class="icon-pause jp-pause" title="pause"></a>
+                <a href="javascript:;" class="icon-next jp-next" title="next"></a>
+            </div>
+            <div class="progress jp-seek-bar"><span class="jp-play-bar" style="width: 0%"></span></div>
+
+        </div>
+        <div id="jquery_jplayer" ></div>
+
+
+    </div>
+
+
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src='js/jquery.jplayer.min.js'></script>
+<script src='js/jplayer.playlist.min.js'></script>
+<script src="js/player.js"></script>
+
+</body>
+</html>

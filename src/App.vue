@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <el-col :span="12">
-    <h5>默认颜色</h5>
+    <h5>目录</h5>
     <el-menu
       default-active="2"
       class="el-menu-vertical-demo"
@@ -122,6 +122,9 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         /*overflow: hidden;*/
+    }
+    .el-col-12 {
+    width: 20%;
     }
 
     .music-block {

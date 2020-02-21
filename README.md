@@ -1,4 +1,11 @@
-# xm-love-xm
+# xm-love-xm   
+### 记录二人的甜蜜时光   
+- 目前实现：视频播放器 音乐播放器   
+- 未来计划： 相册  
+<img width="90%" height="90%" src="https://github.com/xming521/picture/blob/master/QQ截图20200221121911.png"/>  
+
+
+
 
 ## Project setup
 ```
